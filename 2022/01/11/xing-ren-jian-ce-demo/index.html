@@ -415,7 +415,7 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="项目地址：dyh-x2F-win10-yolov5-deepsort-counting-在-win10-运行-yolov5-deepsort-行人-车辆-跟踪-检测-计数-github-com"><a href="#项目地址：dyh-x2F-win10-yolov5-deepsort-counting-在-win10-运行-yolov5-deepsort-行人-车辆-跟踪-检测-计数-github-com" class="headerlink" title="项目地址：dyh/win10_yolov5_deepsort_counting: 在 win10 运行 yolov5 deepsort 行人 车辆 跟踪 检测 计数 (github.com)"></a>项目地址：<a href="https://github.com/dyh/win10_yolov5_deepsort_counting">dyh/win10_yolov5_deepsort_counting: 在 win10 运行 yolov5 deepsort 行人 车辆 跟踪 检测 计数 (github.com)</a></h1><h1 id="环境部署"><a href="#环境部署" class="headerlink" title="环境部署"></a>环境部署</h1><p>首先先假设我们已经安装好了Anaconda，</p>
+                <h2 id="项目地址：dyh-x2F-win10-yolov5-deepsort-counting-在-win10-运行-yolov5-deepsort-行人-车辆-跟踪-检测-计数-github-com"><a href="#项目地址：dyh-x2F-win10-yolov5-deepsort-counting-在-win10-运行-yolov5-deepsort-行人-车辆-跟踪-检测-计数-github-com" class="headerlink" title="项目地址：dyh/win10_yolov5_deepsort_counting: 在 win10 运行 yolov5 deepsort 行人 车辆 跟踪 检测 计数 (github.com)"></a>项目地址：<a href="https://github.com/dyh/win10_yolov5_deepsort_counting">dyh/win10_yolov5_deepsort_counting: 在 win10 运行 yolov5 deepsort 行人 车辆 跟踪 检测 计数 (github.com)</a></h2><h2 id="环境部署"><a href="#环境部署" class="headerlink" title="环境部署"></a>环境部署</h2><p>首先先假设我们已经安装好了Anaconda，</p>
 <p>然后再假设我们安装好了CUDA11.7，</p>
 <p>最好再假设我们安装好了Pycharm，</p>
 <p>首先我们先配置一下python3.9的虚拟环境：</p>
@@ -468,7 +468,7 @@
 
 <p>有框框了。</p>
 <p>接下来看看代码。</p>
-<h1 id="代码阅读"><a href="#代码阅读" class="headerlink" title="代码阅读"></a>代码阅读</h1><h2 id="detector-py"><a href="#detector-py" class="headerlink" title="detector.py"></a>detector.py</h2><h3 id="init"><a href="#init" class="headerlink" title="init"></a><strong>init</strong></h3><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token comment"># 初始化属性</span>
+<h2 id="代码阅读"><a href="#代码阅读" class="headerlink" title="代码阅读"></a>代码阅读</h2><h3 id="detector-py"><a href="#detector-py" class="headerlink" title="detector.py"></a>detector.py</h3><h4 id="init"><a href="#init" class="headerlink" title="init"></a><strong>init</strong></h4><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token comment"># 初始化属性</span>
    <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
        self<span class="token punctuation">.</span>img_size <span class="token operator">=</span> <span class="token number">640</span>     <span class="token comment"># 照片尺寸缩放</span>
        self<span class="token punctuation">.</span>threshold <span class="token operator">=</span> <span class="token number">0.3</span>    <span class="token comment"># 灰度二值化阈值</span>
@@ -483,7 +483,7 @@
        self<span class="token punctuation">.</span>names <span class="token operator">=</span> model<span class="token punctuation">.</span>module<span class="token punctuation">.</span>names <span class="token keyword">if</span> <span class="token builtin">hasattr</span><span class="token punctuation">(</span>
            model<span class="token punctuation">,</span> <span class="token string">'module'</span><span class="token punctuation">)</span> <span class="token keyword">else</span> model<span class="token punctuation">.</span>names   <span class="token comment"># 获得识别标签</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h3 id="preprocess"><a href="#preprocess" class="headerlink" title="preprocess"></a>preprocess</h3><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">def</span> <span class="token function">preprocess</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> img<span class="token punctuation">)</span><span class="token punctuation">:</span>
+<h4 id="preprocess"><a href="#preprocess" class="headerlink" title="preprocess"></a>preprocess</h4><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">def</span> <span class="token function">preprocess</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> img<span class="token punctuation">)</span><span class="token punctuation">:</span>
     <span class="token comment"># 复制图像副本，浅复制</span>
     img0 <span class="token operator">=</span> img<span class="token punctuation">.</span>copy<span class="token punctuation">(</span><span class="token punctuation">)</span>
     <span class="token comment"># yolov5图像预处理letterbox，等比缩放到img_size大小，不够的地方补充黑边</span>
@@ -534,7 +534,7 @@
 <p>opencv将图片数据保存到img时，开辟了一组堆内存，在堆内存里保存数据，并把堆内存的操作地址给了图像数据img，这一操作地址存放在了栈内存。</p>
 <p>但是对数据的翻转等操作改变了栈内存对堆内存的映射关系，并没有改变堆内存数据存放，因此此时内存存放看起来不连续了。</p>
 <p>但是连续的内存运算起来更快，所以把堆内存的数据重新排放了一遍，这样就连续了。</p>
-<h3 id="detect"><a href="#detect" class="headerlink" title="detect"></a>detect</h3><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">def</span> <span class="token function">detect</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> im<span class="token punctuation">)</span><span class="token punctuation">:</span>
+<h4 id="detect"><a href="#detect" class="headerlink" title="detect"></a>detect</h4><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">def</span> <span class="token function">detect</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> im<span class="token punctuation">)</span><span class="token punctuation">:</span>
     <span class="token comment"># 获得原图和预处理后的图</span>
     im0<span class="token punctuation">,</span> img <span class="token operator">=</span> self<span class="token punctuation">.</span>preprocess<span class="token punctuation">(</span>im<span class="token punctuation">)</span>
     <span class="token comment"># 调用方法拿到model</span>
@@ -570,7 +570,7 @@
 <pre class="line-numbers language-python" data-language="python"><code class="language-python">det<span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token punctuation">,</span> <span class="token punctuation">:</span><span class="token number">4</span><span class="token punctuation">]</span> <span class="token operator">=</span> scale_coords<span class="token punctuation">(</span>img<span class="token punctuation">.</span>shape<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">:</span><span class="token punctuation">]</span><span class="token punctuation">,</span> det<span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token punctuation">,</span> <span class="token punctuation">:</span><span class="token number">4</span><span class="token punctuation">]</span><span class="token punctuation">,</span> im0<span class="token punctuation">.</span>shape<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token builtin">round</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <p>我们在前面把图像进行了缩放，缩放后再拿去跑模型检测，所以得到的坐标是缩放之后的图片坐标，但是我们希望得到原图的坐标，因此进行了这个函数。</p>
-<h2 id="tracker-py"><a href="#tracker-py" class="headerlink" title="tracker.py"></a>tracker.py</h2><h3 id="config载入"><a href="#config载入" class="headerlink" title="config载入"></a>config载入</h3><pre class="line-numbers language-python" data-language="python"><code class="language-python">cfg <span class="token operator">=</span> get_config<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<h3 id="tracker-py"><a href="#tracker-py" class="headerlink" title="tracker.py"></a>tracker.py</h3><h4 id="config载入"><a href="#config载入" class="headerlink" title="config载入"></a>config载入</h4><pre class="line-numbers language-python" data-language="python"><code class="language-python">cfg <span class="token operator">=</span> get_config<span class="token punctuation">(</span><span class="token punctuation">)</span>
 cfg<span class="token punctuation">.</span>merge_from_file<span class="token punctuation">(</span><span class="token string">"./deep_sort/configs/deep_sort.yaml"</span><span class="token punctuation">)</span>
 deepsort <span class="token operator">=</span> DeepSort<span class="token punctuation">(</span>cfg<span class="token punctuation">.</span>DEEPSORT<span class="token punctuation">.</span>REID_CKPT<span class="token punctuation">,</span>
                     max_dist<span class="token operator">=</span>cfg<span class="token punctuation">.</span>DEEPSORT<span class="token punctuation">.</span>MAX_DIST<span class="token punctuation">,</span> min_confidence<span class="token operator">=</span>cfg<span class="token punctuation">.</span>DEEPSORT<span class="token punctuation">.</span>MIN_CONFIDENCE<span class="token punctuation">,</span>
@@ -579,7 +579,7 @@ deepsort <span class="token operator">=</span> DeepSort<span class="token punctu
                     use_cuda<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <p>这里引入了一个deepsort对象</p>
-<h3 id="draw-bboxes"><a href="#draw-bboxes" class="headerlink" title="draw_bboxes"></a>draw_bboxes</h3><pre class="line-numbers language-none"><code class="language-none">def draw_bboxes(image, bboxes, line_thickness):     # 画框框
+<h4 id="draw-bboxes"><a href="#draw-bboxes" class="headerlink" title="draw_bboxes"></a>draw_bboxes</h4><pre class="line-numbers language-none"><code class="language-none">def draw_bboxes(image, bboxes, line_thickness):     # 画框框
     line_thickness = line_thickness or round(
         0.002 * (image.shape[0] + image.shape[1]) * 0.5) + 1
     # 线宽，要么指定，要么根据图像长宽像素算
@@ -636,7 +636,7 @@ cv2<span class="token punctuation">.</span>getTextSize<span class="token punctua
 <p>我们这里只取了(width,height)，并没有取bottom。</p>
 <pre class="line-numbers language-none"><code class="language-none">cv2.fillPoly(image, [ndarray_pts], color=(0, 0, 255))<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<h3 id="update"><a href="#update" class="headerlink" title="update"></a>update</h3><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">def</span> <span class="token function">update</span><span class="token punctuation">(</span>bboxes<span class="token punctuation">,</span> image<span class="token punctuation">)</span><span class="token punctuation">:</span>
+<h4 id="update"><a href="#update" class="headerlink" title="update"></a>update</h4><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">def</span> <span class="token function">update</span><span class="token punctuation">(</span>bboxes<span class="token punctuation">,</span> image<span class="token punctuation">)</span><span class="token punctuation">:</span>
     bbox_xywh <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>  <span class="token comment"># x，y，长，宽</span>
     confs <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>  <span class="token comment"># 置信度</span>
     bboxes2draw <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>	<span class="token comment"># 待返回数据组</span>
@@ -675,7 +675,7 @@ outputs <span class="token operator">=</span> self<span class="token punctuation
 <p>首先我们要经过一个目标检测模块，这里我们用的是yolov5，检测完后，会得到一堆的检测坐标，这些坐标其实就是上文说的人的矩形框对角坐标，把这堆坐标通过self.deepsort.update发给deepsort模块之后，deepsort会对这些矩形框进行序号标记，并且与下一帧进行对比。</p>
 <p>当下一帧又发来一堆检测坐标的时候，deepsort会通过匈牙利算法判断两帧中哪两个矩形框框住的目标是同一个，然后给出框框的序号，这样我们的框框不仅跟着人走，还根据人的特征分发了序号，实现了目标追踪。</p>
 <p>deepsort算法的具体内容另一篇写，这篇写不了那么多了。</p>
-<h3 id="search-label"><a href="#search-label" class="headerlink" title="search_label"></a>search_label</h3><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">def</span> <span class="token function">search_label</span><span class="token punctuation">(</span>center_x<span class="token punctuation">,</span> center_y<span class="token punctuation">,</span> bboxes_xyxy<span class="token punctuation">,</span> max_dist_threshold<span class="token punctuation">)</span><span class="token punctuation">:</span>
+<h4 id="search-label"><a href="#search-label" class="headerlink" title="search_label"></a>search_label</h4><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">def</span> <span class="token function">search_label</span><span class="token punctuation">(</span>center_x<span class="token punctuation">,</span> center_y<span class="token punctuation">,</span> bboxes_xyxy<span class="token punctuation">,</span> max_dist_threshold<span class="token punctuation">)</span><span class="token punctuation">:</span>
     <span class="token triple-quoted-string string">"""
     在 yolov5 的 bbox 中搜索中心点最接近的label
     :param center_x:
@@ -720,7 +720,7 @@ outputs <span class="token operator">=</span> self<span class="token punctuation
 
 <p>这一个函数是因为，我们在拿到deepsort返回的矩形框坐标的时候，实际上跟我们发送过去的矩形框坐标有一点出入，但只相差几个像素，所以我们完全可以根据像素距离确定框框坐标的对应关系。</p>
 <p>很容易看懂，就是把deepsort的矩形框中心坐标发进去，然后跟yolov5检测出的所有框框中心坐标对比，看跟哪个最近，把最近那个框框的标签取下来返回就行，看得懂python就能看得懂这段。</p>
-<h2 id="main-py"><a href="#main-py" class="headerlink" title="main.py"></a>main.py</h2><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">'__main__'</span><span class="token punctuation">:</span>
+<h3 id="main-py"><a href="#main-py" class="headerlink" title="main.py"></a>main.py</h3><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">'__main__'</span><span class="token punctuation">:</span>
 
     <span class="token comment"># 背景幕布，一个1080*1920的零矩阵，二维张量</span>
     mask_image_temp <span class="token operator">=</span> np<span class="token punctuation">.</span>zeros<span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token number">1080</span><span class="token punctuation">,</span> <span class="token number">1920</span><span class="token punctuation">)</span><span class="token punctuation">,</span> dtype<span class="token operator">=</span>np<span class="token punctuation">.</span>uint8<span class="token punctuation">)</span>
