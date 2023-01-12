@@ -1480,13 +1480,13 @@ outputs <span class="token operator">=</span> self<span class="token punctuation
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/Lillia.github.io/2022/02/11/51-dan-pian-ji-jian-pan/">
+                <a href="/Lillia.github.io/2022/02/11/51-dan-pian-ji-duo-gong-neng-zhong/">
                     <div class="card-image">
                         
                         
-                        <img src="/Lillia.github.io/medias/featureimages/22.jpg" class="responsive-img" alt="51单片机键盘">
+                        <img src="/Lillia.github.io/medias/featureimages/21.jpg" class="responsive-img" alt="51单片机多功能钟">
                         
-                        <span class="card-title">51单片机键盘</span>
+                        <span class="card-title">51单片机多功能钟</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1520,10 +1520,6 @@ outputs <span class="token operator">=</span> self<span class="token punctuation
                     
                     <a href="/Lillia.github.io/tags/%E5%8D%95%E7%89%87%E6%9C%BA/">
                         <span class="chip bg-color">单片机</span>
-                    </a>
-                    
-                    <a href="/Lillia.github.io/tags/%E9%94%AE%E7%9B%98/">
-                        <span class="chip bg-color">键盘</span>
                     </a>
                     
                 </div>
@@ -1986,10 +1982,42 @@ $(function () {
     
 
     
+        <script src="//code.tidio.co/vlgkekwd4i6ofpk8hzniftqst2xijeqe.js"></script>
+        <script>
+            $(document).ready(function () {
+                setInterval(change_Tidio, 50);
+                function change_Tidio() {
+                    var tidio=$("#tidio-chat iframe");
+                    if(tidio.css("display")=="block"&& $(window).width()>977 ){
+                        document.getElementById("tidio-chat-iframe").style.bottom= ($("div#backTop.top-scroll").css("display")=="none" &&$(window).width()>977)>0? "-40px" : ($("div.toc-title").length&&$(window).width()>977)>0?"85px":"20px";
+                        document.getElementById("tidio-chat-iframe").style.right="-15px";
+                        document.getElementById("tidio-chat-iframe").style.height=parseInt(tidio.css("height"))>=520?"520px":tidio.css("height");
+                        document.getElementById("tidio-chat-iframe").style.zIndex="997";
+                    }
+                    else if(tidio.css("display")=="block"&&$(window).width()>601 &&$(window).width()<992 ){
+                        document.getElementById("tidio-chat-iframe").style.bottom= ($("div#backTop.top-scroll").css("display")=="none" && 601< $(window).width()<992)>0? "-40px":"20px" ;
+                        document.getElementById("tidio-chat-iframe").style.right="-15px";
+                        document.getElementById("tidio-chat-iframe").style.zIndex="997";
+                    }
+                    else if(tidio.css("display")=="block"&&$(window).width()<601 && parseInt(tidio.css("height"))<230){
+                        document.getElementById("tidio-chat-iframe").style.bottom= ($("div#backTop.top-scroll").css("display")=="none" && $(window).width()<601)>0? "-10px":"45px" ;
+                        document.getElementById("tidio-chat-iframe").style.zIndex="997";
+                    }
+                    if( tidio.css("display")=="block"&&$(window).width()<601 && parseInt(tidio.css("height"))>=230){
+                        document.getElementById("tidio-chat-iframe").style.zIndex="998";
+                    }
+                }
+            });
+        </script>
+    
 
     
 
     <!--腾讯兔小巢-->
+    
+        <div style="position:fixed;bottom:125px;right:16px;cursor: pointer;">
+            <a title="兔小巢" target="_blank" rel="noopener" href="https://support.qq.com/products/491953"><i class="fa fa-comments fa-3x"  aria-hidden="true"></i></a>
+        </div>
     
     
 

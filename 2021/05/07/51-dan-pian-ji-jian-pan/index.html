@@ -6,9 +6,9 @@
     <meta charset="utf-8">
     <meta name="keywords" content="51单片机键盘, 莉莉娅！">
     <meta name="description" content="（其实是知乎内容的搬运）
+知乎链接低端键盘diy，从入门到放弃 - 知乎 (zhihu.com)
 
-前段时间捣鼓按键的时候突发奇想，想做一块小键盘放在左手边的104布局，方便实验输数据，左手键盘敲数据，右手鼠标，从这学期开学开始谋划，做到现在基本能看了。
-这块键盘在开始谋划的时候参考了很多刘威老师的博客，顺便指">
+前段时间捣鼓按键的时候突发奇想，想做一块小键盘放在左手边的104布局，方便实验输数据，左手键盘敲数据，右手鼠标，从这学期开学开始谋划，做到现">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -402,7 +402,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-02-11
+                    2021-05-07
                 </div>
                 
 
@@ -432,7 +432,8 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <p>（其实是知乎内容的搬运）</p>
-<img src="/Lillia.github.io/2022/02/11/51-dan-pian-ji-jian-pan/v2-aa8da7ea78afd039415ca85d6d3043b4_720w.jpeg" class="" title="莉莉娅！">
+<h2 id="知乎链接"><a href="#知乎链接" class="headerlink" title="知乎链接"></a>知乎链接</h2><p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/370688866">低端键盘diy，从入门到放弃 - 知乎 (zhihu.com)</a></p>
+<img src="/Lillia.github.io/2021/05/07/51-dan-pian-ji-jian-pan/v2-aa8da7ea78afd039415ca85d6d3043b4_720w.jpeg" class="" title="莉莉娅！">
 <p>前段时间捣鼓按键的时候突发奇想，想做一块小键盘放在左手边的104布局，方便实验输数据，左手键盘敲数据，右手鼠标，从这学期开学开始谋划，做到现在基本能看了。</p>
 <p>这块键盘在开始谋划的时候参考了很多刘威老师的博客，顺便指路一下：</p>
 <p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/112810009">diy从pcb到焊接，到程序调试，真正意思上的diy机械键盘pcb由ad绘制 - 知乎 (zhihu.com)</a></p>
@@ -440,7 +441,7 @@
 <p><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/265112599/answer/297843217">你有什么有单片机或开源硬件做的有意思的作品吗？ - 知乎 (zhihu.com)</a></p>
 <h2 id="芯片选用"><a href="#芯片选用" class="headerlink" title="芯片选用"></a><strong>芯片选用</strong></h2><p>我承认这显得很奇怪，但是我确实采用了51芯片来做这件事，芯片没有办法直接配备hid协议，因此还要单独配一个usb芯片，这里选择的是ch9329，一款可以直接将串口信息转为hid信号的芯片。</p>
 <p>CH9329 是一款串口转标准 USB HID 设备(键盘、鼠标、自定义 HID)芯片，根据不同的工作模式， 在电脑上可被识别为标准的 USB 键盘设备、USB 鼠标设备或自定义 HID 类设备。该芯片接收客户端发送过来的串口数据，并按照 HID 类设备规范，将数据先进行打包再通过 USB 口上传给计算机。通过提供的上位机软件，用户也可自行配置芯片工作模式、串口通信模式、串口通信波特率、多种超时时间、VID、PID，以及各种 USB 字符串描述符。</p>
-<img src="/Lillia.github.io/2022/02/11/51-dan-pian-ji-jian-pan/image-20230108190253036.png" class="" title="CH9328/CH9329芯片作用示意图">
+<img src="/Lillia.github.io/2021/05/07/51-dan-pian-ji-jian-pan/image-20230108190253036.png" class="" title="CH9328/CH9329芯片作用示意图">
 <h2 id="设备清单"><a href="#设备清单" class="headerlink" title="设备清单"></a><strong>设备清单</strong></h2><p>STC15W4K32S2</p>
 <p>CH9329</p>
 <p>TTC金粉轴</p>
@@ -453,27 +454,27 @@
 <p>电容</p>
 <p>碳纤维定位板</p>
 <h2 id="布局设计（这一段可以参考刘威老师的博客）"><a href="#布局设计（这一段可以参考刘威老师的博客）" class="headerlink" title="布局设计（这一段可以参考刘威老师的博客）"></a><strong>布局设计（这一段可以参考刘威老师的博客）</strong></h2><p>键盘的布局可以去 <a href="http://link.zhihu.com/?target=http%3A//www.keyboard-layout-editor.com/">http://www.keyboard-layout-editor.com/</a> 进行设计</p>
-<img src="/Lillia.github.io/2022/02/11/51-dan-pian-ji-jian-pan/image-20230108194020579.png" class="" title="网站页面">
+<img src="/Lillia.github.io/2021/05/07/51-dan-pian-ji-jian-pan/image-20230108194020579.png" class="" title="网站页面">
 <p>在preset处可以选用一些比较常见的布局，注意复制粘贴的操作，选中某个键以后会在这行后面加上你复制的键位，但如果你复制的键位不止一列，它会在最下方重开一行，如果不选中任何键的话会直接粘贴在最下方新开的一行</p>
-<img src="/Lillia.github.io/2022/02/11/51-dan-pian-ji-jian-pan/image-20230108194052432.png" class="" title="键盘布局设置">
+<img src="/Lillia.github.io/2021/05/07/51-dan-pian-ji-jian-pan/image-20230108194052432.png" class="" title="键盘布局设置">
 <p>properties处可以设定键位的名称和长宽</p>
-<img src="/Lillia.github.io/2022/02/11/51-dan-pian-ji-jian-pan/image-20230108194215830.png" class="" title="键盘布局Raw Data">
+<img src="/Lillia.github.io/2021/05/07/51-dan-pian-ji-jian-pan/image-20230108194215830.png" class="" title="键盘布局Raw Data">
 <p>在rawdata处得到我们需要的数据，全选后复制，进入下一个网站<a target="_blank" rel="noopener" href="http://builder.swillkb.com/">Plate &amp; Case Builder - swillkb</a></p>
-<img src="/Lillia.github.io/2022/02/11/51-dan-pian-ji-jian-pan/image-20230108194437555.png" class="" title="Plate&amp;Case Builder界面">
+<img src="/Lillia.github.io/2021/05/07/51-dan-pian-ji-jian-pan/image-20230108194437555.png" class="" title="Plate&amp;Case Builder界面">
 <p>在plate layout处粘贴上我们刚才复制的数据，switch type可以选择按键的类型，如果要对照着来画pcb的话，如果采用跟樱桃轴适配的一类轴体建议采用第三个（也就是我选中的这个），他跟键轴的封装是对应的，当然，在后续找厂家定制定位板的时候，前三个都是可以的。</p>
 <p>stabilizer type指的是卫星轴/平衡杆的类型，具体可以点一下看看，比较通用的是cherry+costar{_s1:}。</p>
 <p>edge pading指边缘补充，不打开的时候键轴离边缘距离比较短，如果需要打开的话可以适当的增大键轴离边缘距离。</p>
 <p>plate corners 是圆角处理，根据需要选择。</p>
 <p>custom polygons为自定义多边形，这个就得发挥你的想象力了。</p>
 <p>kerf不知道是啥，大家可以试几个参数看看效果。</p>
-<img src="/Lillia.github.io/2022/02/11/51-dan-pian-ji-jian-pan/image-20230108194517998.png" class="" title="kerf为10的情况">
+<img src="/Lillia.github.io/2021/05/07/51-dan-pian-ji-jian-pan/image-20230108194517998.png" class="" title="kerf为10的情况">
 <p>key unit size是键轴的大小，一般不用改，除非你的轴也是定制的，而且跟公模不一样。</p>
 <p>line size 和line color 就不说了，意义不是特别大，也比较好理解。</p>
 <p>这里有一个叫做case type的内容，如果选择none的话，就只生成定位板的dxf，如果选择sandwich的话则生成一套的dxf，包括表面层，底层，定位板，和边框。</p>
-<img src="/Lillia.github.io/2022/02/11/51-dan-pian-ji-jian-pan/image-20230108195039325.png" class="" title="关于键盘的固定可以参考这个图">
+<img src="/Lillia.github.io/2021/05/07/51-dan-pian-ji-jian-pan/image-20230108195039325.png" class="" title="关于键盘的固定可以参考这个图">
 <p>poker选项就有点类似直接把板子叠起来，放到一个小盒子里固定。</p>
 <p>在pcb布线排元件的时候，我们需要把Switch Layer的dxf下载下来，打开ad，左上角file-&gt;import-&gt;dxf/dwg</p>
-<img src="/Lillia.github.io/2022/02/11/51-dan-pian-ji-jian-pan/image-20230108195427130.png" class="" title="注意需要把比例调成mm，默认是mil，其他参数不是特别重要">
+<img src="/Lillia.github.io/2021/05/07/51-dan-pian-ji-jian-pan/image-20230108195427130.png" class="" title="注意需要把比例调成mm，默认是mil，其他参数不是特别重要">
 <p>到这里前期准备就已经结束了。</p>
 <h2 id="程序设计"><a href="#程序设计" class="headerlink" title="程序设计"></a><strong>程序设计</strong></h2><p>键盘的客制化目前比较主流的还是用Arduino刷qmk固件，操作比较简单，具体的刷qmk操作可以参考下面这个链接：</p>
 <p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/79114621">低端客制化，一份简单的键盘制作记录 - 知乎 (zhihu.com)</a></p>
@@ -492,24 +493,24 @@
 <p><a target="_blank" rel="noopener" href="http://www.51hei.com/bbs/dpj-180742-1.html">基于51单片机的WS2812B全彩灯程序，亲测可用 - 单片机DIY制作 (51hei.com)</a></p>
 <h2 id="全键无冲"><a href="#全键无冲" class="headerlink" title="全键无冲"></a><strong>全键无冲</strong></h2><p>标准的键盘hid协议一次只能传输6个普通键位，所以一般键盘都是6键无冲，但如果你会配置自定义hid协议，也是可以实现全键无冲的（二极管防鬼键只是在物理层面上实现了这种可能，实现全键无冲还是需要协议支持的），但自定义hid协议有可能导致在一些比较古老的主板上兼容性不好。hid协议的自定义可以参考一本教程叫《圈圈教你玩USB》。这里图方便我并不去配置这个内容了，当然，如果采用stm32的话可以直接用stm-cube搭建hid协议。</p>
 <h2 id="原理图和PCB"><a href="#原理图和PCB" class="headerlink" title="原理图和PCB"></a><strong>原理图和PCB</strong></h2><p>这里看一下就可以了，事实上这个pcb的布局非常糟糕，当时做键盘的时候啥也不会，以为元件放正面会影响手感，把元件全放在了背面，导致整个pcb非常臃肿，连钉位都没加。</p>
-<img src="/Lillia.github.io/2022/02/11/51-dan-pian-ji-jian-pan/image-20230108200205946.png" class="">
-<img src="/Lillia.github.io/2022/02/11/51-dan-pian-ji-jian-pan/image-20230108200340492.png" class="">
-<img src="/Lillia.github.io/2022/02/11/51-dan-pian-ji-jian-pan/image-20230108200355419.png" class="">
+<img src="/Lillia.github.io/2021/05/07/51-dan-pian-ji-jian-pan/image-20230108200205946.png" class="">
+<img src="/Lillia.github.io/2021/05/07/51-dan-pian-ji-jian-pan/image-20230108200340492.png" class="">
+<img src="/Lillia.github.io/2021/05/07/51-dan-pian-ji-jian-pan/image-20230108200355419.png" class="">
 <p>usb接口直接选了usb母头，甚至没有选择micro-usb母口，这个设计直接被我师姐嘲讽。</p>
-<img src="/Lillia.github.io/2022/02/11/51-dan-pian-ji-jian-pan/image-20230108200433576.png" class="">
+<img src="/Lillia.github.io/2021/05/07/51-dan-pian-ji-jian-pan/image-20230108200433576.png" class="">
 <h2 id="外壳设计"><a href="#外壳设计" class="headerlink" title="外壳设计"></a><strong>外壳设计</strong></h2><p>刚才提到整块pcb是没有留钉位的（只留了smt贴片需要的四个1.1mm的定位孔）因此只能选用一个比较古老的家具结构——榫卯。如果要采用榫卯的话就拿钻头和锯子磨榫眼就是必须的操作了。</p>
-<img src="/Lillia.github.io/2022/02/11/51-dan-pian-ji-jian-pan/image-20230108200742736.png" class="">
-<img src="/Lillia.github.io/2022/02/11/51-dan-pian-ji-jian-pan/image-20230108200805338.png" class="">
+<img src="/Lillia.github.io/2021/05/07/51-dan-pian-ji-jian-pan/image-20230108200742736.png" class="">
+<img src="/Lillia.github.io/2021/05/07/51-dan-pian-ji-jian-pan/image-20230108200805338.png" class="">
 <p>这里的结构比较简单，其实就是边缘托起整块pcb，定位板和键轴，定位板和pcb间距大概是3.7mm，做成一种卡扣的形式。但需要注意pcb和定位板之间需要给卫星轴的铁支架留点位置，托住pcb的部分需要留给背面边缘的元件一点空间，具体实践起来并不难，实在有设计不周到的地方就拿锯子和电钻磨掉好了，反正做榫卯就要做这种磨合保证它卡稳。</p>
 <p>因为选择了usb母口，太厚了，所以底板加厚到了5mm，因此整个外壳高度去到了17.8mm。剩下的事情就用3d打印好了，这里用的是abs光固化。（这里建议不要去tb，直接找厂家加工）</p>
 <p>定位板则是直接选择了碳纤维板，把第一步里得到的switch layer（其实就是定位板）拿去给厂家加工。</p>
 <h2 id="键帽"><a href="#键帽" class="headerlink" title="键帽"></a><strong>键帽</strong></h2><p>整套键盘应该说就是为了这套键帽服务的，也是去找tb定制的五面热升华</p>
-<img src="/Lillia.github.io/2022/02/11/51-dan-pian-ji-jian-pan/image-20230108200855046.png" class="">
+<img src="/Lillia.github.io/2021/05/07/51-dan-pian-ji-jian-pan/image-20230108200855046.png" class="">
 <p>无非就是在photoshop上，把第一步键盘布局的jpg加载的第一个图层，把想要的图放在第二个图层，在第一个图层选中好要抓取的位置以后切到第二个图层，就能把键位的图都抠下来了。（但我师姐还是指出这个搭配并不好看）</p>
 <p>其实本来希望的效果是图片中央的部分直接贴在键帽上方，剩下的四边延伸一下贴在四个面，但自己并不会用Illustrator，老板也是第一次做这种形式的，所以最后可能效果并没有那么理想，但也还能接受。</p>
 <p>键帽就是圣经诵读了。《我永远喜欢朱迪》《为莉莉娅献上心脏》。</p>
-<img src="/Lillia.github.io/2022/02/11/51-dan-pian-ji-jian-pan/image-20230108200931737.png" class="">
-<img src="/Lillia.github.io/2022/02/11/51-dan-pian-ji-jian-pan/image-20230108200957619.png" class="">
+<img src="/Lillia.github.io/2021/05/07/51-dan-pian-ji-jian-pan/image-20230108200931737.png" class="">
+<img src="/Lillia.github.io/2021/05/07/51-dan-pian-ji-jian-pan/image-20230108200957619.png" class="">
 <p>GitHub链接：<a href="https://github.com/DidUSeeMyElk/51keyboard">DidUSeeMyElk/51keyboard: stc15单片机做的一个键盘 (github.com)</a></p>
 
                 
@@ -537,7 +538,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://github.com/DidUSeeMyElk/Lillia.github.io/Lillia.github.io/2022/02/11/51-dan-pian-ji-jian-pan/">https://github.com/DidUSeeMyElk/Lillia.github.io/Lillia.github.io/2022/02/11/51-dan-pian-ji-jian-pan/</a>
+                    <a href="https://github.com/DidUSeeMyElk/Lillia.github.io/Lillia.github.io/2021/05/07/51-dan-pian-ji-jian-pan/">https://github.com/DidUSeeMyElk/Lillia.github.io/Lillia.github.io/2021/05/07/51-dan-pian-ji-jian-pan/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -878,13 +879,13 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/Lillia.github.io/2023/01/11/xing-ren-jian-ce-demo/">
+                <a href="/Lillia.github.io/2022/02/11/51-dan-pian-ji-duo-gong-neng-zhong/">
                     <div class="card-image">
                         
                         
-                        <img src="/Lillia.github.io/medias/featureimages/4.jpg" class="responsive-img" alt="行人检测demo">
+                        <img src="/Lillia.github.io/medias/featureimages/21.jpg" class="responsive-img" alt="51单片机多功能钟">
                         
-                        <span class="card-title">行人检测demo</span>
+                        <span class="card-title">51单片机多功能钟</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -895,7 +896,7 @@
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2023-01-11
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-02-11
                         </span>
                         <span class="publish-author">
                             
@@ -916,16 +917,8 @@
                         <span class="chip bg-color">blog</span>
                     </a>
                     
-                    <a href="/Lillia.github.io/tags/DeepLearning/">
-                        <span class="chip bg-color">DeepLearning</span>
-                    </a>
-                    
-                    <a href="/Lillia.github.io/tags/YOLOv5/">
-                        <span class="chip bg-color">YOLOv5</span>
-                    </a>
-                    
-                    <a href="/Lillia.github.io/tags/DeepSORT/">
-                        <span class="chip bg-color">DeepSORT</span>
+                    <a href="/Lillia.github.io/tags/%E5%8D%95%E7%89%87%E6%9C%BA/">
+                        <span class="chip bg-color">单片机</span>
                     </a>
                     
                 </div>
@@ -939,7 +932,7 @@
                 本篇&nbsp;<i class="far fa-dot-circle"></i>
             </div>
             <div class="card">
-                <a href="/Lillia.github.io/2022/02/11/51-dan-pian-ji-jian-pan/">
+                <a href="/Lillia.github.io/2021/05/07/51-dan-pian-ji-jian-pan/">
                     <div class="card-image">
                         
                         
@@ -956,7 +949,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-02-11
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-05-07
                             </span>
                         <span class="publish-author">
                             
@@ -1439,10 +1432,42 @@ $(function () {
     
 
     
+        <script src="//code.tidio.co/vlgkekwd4i6ofpk8hzniftqst2xijeqe.js"></script>
+        <script>
+            $(document).ready(function () {
+                setInterval(change_Tidio, 50);
+                function change_Tidio() {
+                    var tidio=$("#tidio-chat iframe");
+                    if(tidio.css("display")=="block"&& $(window).width()>977 ){
+                        document.getElementById("tidio-chat-iframe").style.bottom= ($("div#backTop.top-scroll").css("display")=="none" &&$(window).width()>977)>0? "-40px" : ($("div.toc-title").length&&$(window).width()>977)>0?"85px":"20px";
+                        document.getElementById("tidio-chat-iframe").style.right="-15px";
+                        document.getElementById("tidio-chat-iframe").style.height=parseInt(tidio.css("height"))>=520?"520px":tidio.css("height");
+                        document.getElementById("tidio-chat-iframe").style.zIndex="997";
+                    }
+                    else if(tidio.css("display")=="block"&&$(window).width()>601 &&$(window).width()<992 ){
+                        document.getElementById("tidio-chat-iframe").style.bottom= ($("div#backTop.top-scroll").css("display")=="none" && 601< $(window).width()<992)>0? "-40px":"20px" ;
+                        document.getElementById("tidio-chat-iframe").style.right="-15px";
+                        document.getElementById("tidio-chat-iframe").style.zIndex="997";
+                    }
+                    else if(tidio.css("display")=="block"&&$(window).width()<601 && parseInt(tidio.css("height"))<230){
+                        document.getElementById("tidio-chat-iframe").style.bottom= ($("div#backTop.top-scroll").css("display")=="none" && $(window).width()<601)>0? "-10px":"45px" ;
+                        document.getElementById("tidio-chat-iframe").style.zIndex="997";
+                    }
+                    if( tidio.css("display")=="block"&&$(window).width()<601 && parseInt(tidio.css("height"))>=230){
+                        document.getElementById("tidio-chat-iframe").style.zIndex="998";
+                    }
+                }
+            });
+        </script>
+    
 
     
 
     <!--腾讯兔小巢-->
+    
+        <div style="position:fixed;bottom:125px;right:16px;cursor: pointer;">
+            <a title="兔小巢" target="_blank" rel="noopener" href="https://support.qq.com/products/491953"><i class="fa fa-comments fa-3x"  aria-hidden="true"></i></a>
+        </div>
     
     
 
