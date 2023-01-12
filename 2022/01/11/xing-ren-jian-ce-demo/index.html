@@ -5,7 +5,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="行人检测demo, 莉莉娅！">
-    <meta name="description" content="项目地址：dyh/win10_yolov5_deepsort_counting: 在 win10 运行 yolov5 deepsort 行人 车辆 跟踪 检测 计数 (github.com)环境部署首先先假设我们已经安装好了Anaconda">
+    <meta name="description" content="项目地址：dyh/win10_yolov5_deepsort_counting: 在 win10 运行 yolov5 deepsort 行人 车辆 跟踪 检测 计数 (github.com)
+环境部署首先先假设我们已经安装好了Anacond">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -415,7 +416,8 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="项目地址：dyh-x2F-win10-yolov5-deepsort-counting-在-win10-运行-yolov5-deepsort-行人-车辆-跟踪-检测-计数-github-com"><a href="#项目地址：dyh-x2F-win10-yolov5-deepsort-counting-在-win10-运行-yolov5-deepsort-行人-车辆-跟踪-检测-计数-github-com" class="headerlink" title="项目地址：dyh/win10_yolov5_deepsort_counting: 在 win10 运行 yolov5 deepsort 行人 车辆 跟踪 检测 计数 (github.com)"></a>项目地址：<a href="https://github.com/dyh/win10_yolov5_deepsort_counting">dyh/win10_yolov5_deepsort_counting: 在 win10 运行 yolov5 deepsort 行人 车辆 跟踪 检测 计数 (github.com)</a></h2><h2 id="环境部署"><a href="#环境部署" class="headerlink" title="环境部署"></a>环境部署</h2><p>首先先假设我们已经安装好了Anaconda，</p>
+                <h2 id="项目地址："><a href="#项目地址：" class="headerlink" title="项目地址："></a>项目地址：</h2><p><a href="https://github.com/dyh/win10_yolov5_deepsort_counting">dyh/win10_yolov5_deepsort_counting: 在 win10 运行 yolov5 deepsort 行人 车辆 跟踪 检测 计数 (github.com)</a></p>
+<h2 id="环境部署"><a href="#环境部署" class="headerlink" title="环境部署"></a>环境部署</h2><p>首先先假设我们已经安装好了Anaconda，</p>
 <p>然后再假设我们安装好了CUDA11.7，</p>
 <p>最好再假设我们安装好了Pycharm，</p>
 <p>首先我们先配置一下python3.9的虚拟环境：</p>
@@ -432,14 +434,14 @@
 
 <p>接着输入pip3 install -r requirements.txt，安装项目外部库。</p>
 <p>虚拟环境下输入python -m pip install –upgrade pip升级pip，接下来去<a target="_blank" rel="noopener" href="https://pytorch.org/get-started/locally/">Start Locally | PyTorch</a>找到对应的安装命令，下载对应CUDA版本的Pytorch，因为我电脑环境配置了CUDA11.7，这里就不在虚拟环境配置CUDA了，默认都装好了，这里输入pip3 install torch torchvision torchaudio –extra-index-url <a target="_blank" rel="noopener" href="https://download.pytorch.org/whl/cu117">https://download.pytorch.org/whl/cu117</a> 。</p>
-<img src="/Lillia.github.io/2022/01/11/xing-ren-jian-ce-demo/image-20230109160206892.png" class="" title="image-20230109160206892">
+<img src="/Lillia.github.io/2022/01/11/xing-ren-jian-ce-demo/image-20230109160206892.png" class="">
 
 <p>打开项目文件夹，右键，选择打开文件夹作为Pycharm项目，并且信任项目。</p>
 <p>选择配置好的虚拟环境作为Python解释器。</p>
-<img src="/Lillia.github.io/2022/01/11/xing-ren-jian-ce-demo/image-20230109153403933.png" class="" title="image-20230109153403933">
+<img src="/Lillia.github.io/2022/01/11/xing-ren-jian-ce-demo/image-20230109153403933.png" class="">
 
 <p>尝试运行一下。</p>
-<img src="/Lillia.github.io/2022/01/11/xing-ren-jian-ce-demo/image-20230109153443403.png" class="" title="image-20230109153443403">
+<img src="/Lillia.github.io/2022/01/11/xing-ren-jian-ce-demo/image-20230109153443403.png" class="">
 
 <p>出现了一个小报错，小修改，将from  cv2 import cv2 改成import cv2即可。</p>
 <img src="/Lillia.github.io/2022/01/11/xing-ren-jian-ce-demo/image-20230109153517419.png" class="" title="修改前">
@@ -447,7 +449,7 @@
 <img src="/Lillia.github.io/2022/01/11/xing-ren-jian-ce-demo/image-20230109153535399.png" class="" title="修改后">
 
 <p>再试试：</p>
-<img src="/Lillia.github.io/2022/01/11/xing-ren-jian-ce-demo/image-20230109153659840.png" class="" title="image-20230109153659840">
+<img src="/Lillia.github.io/2022/01/11/xing-ren-jian-ce-demo/image-20230109153659840.png" class="">
 
 <p>又有新报错，查查资料，打开upsampling.py，小做修改。</p>
 <img src="/Lillia.github.io/2022/01/11/xing-ren-jian-ce-demo/image-20230109153808535.png" class="" title="修改前">
@@ -455,7 +457,7 @@
 <img src="/Lillia.github.io/2022/01/11/xing-ren-jian-ce-demo/image-20230109153839748.png" class="" title="修改后">
 
 <p>再试试：</p>
-<img src="/Lillia.github.io/2022/01/11/xing-ren-jian-ce-demo/image-20230109153916484.png" class="" title="image-20230109153916484">
+<img src="/Lillia.github.io/2022/01/11/xing-ren-jian-ce-demo/image-20230109153916484.png" class="">
 
 <p>能跑了，但是没有框框。</p>
 <p>再看看，将detector.py里的model.half改成model.float，img.half改成img.float。</p>
@@ -464,7 +466,7 @@
 <img src="/Lillia.github.io/2022/01/11/xing-ren-jian-ce-demo/image-20230109154046732.png" class="" title="修改后">
 
 <p>再试试：</p>
-<img src="/Lillia.github.io/2022/01/11/xing-ren-jian-ce-demo/image-20230109154119832.png" class="" title="image-20230109154119832">
+<img src="/Lillia.github.io/2022/01/11/xing-ren-jian-ce-demo/image-20230109154119832.png" class="">
 
 <p>有框框了。</p>
 <p>接下来看看代码。</p>
@@ -623,7 +625,7 @@ deepsort <span class="token operator">=</span> DeepSort<span class="token punctu
 cv2<span class="token punctuation">.</span>rectangle<span class="token punctuation">(</span>image<span class="token punctuation">,</span> c1<span class="token punctuation">,</span> c2<span class="token punctuation">,</span> color<span class="token punctuation">,</span> thickness<span class="token operator">=</span>line_thickness<span class="token punctuation">,</span> lineType<span class="token operator">=</span>cv2<span class="token punctuation">.</span>LINE_AA<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 
 <p>众所周知只需要两个点就能确定下一个矩形，c1和c2是模型检测出的人或物体所在的坐标，用c1和c2画框框就能把人给框起来，也就是下图的AB点，之后我们把c2坐标写在了C点，这样AC就可以画出标签框的颜色背景。</p>
-<img src="/Lillia.github.io/2022/01/11/xing-ren-jian-ce-demo/image-20230111151655450.png" class="" title="image-20230111151655450">
+<img src="/Lillia.github.io/2022/01/11/xing-ren-jian-ce-demo/image-20230111151655450.png" class="">
 
 <pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token comment"># 输入参数：要显示的字符，字体编号，字符比例，粗细</span>
 cv2<span class="token punctuation">.</span>getTextSize<span class="token punctuation">(</span>cls_id<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> fontScale<span class="token operator">=</span>line_thickness <span class="token operator">/</span> <span class="token number">3</span><span class="token punctuation">,</span> thickness<span class="token operator">=</span>font_thickness<span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>
@@ -934,7 +936,7 @@ outputs <span class="token operator">=</span> self<span class="token punctuation
     cv2<span class="token punctuation">.</span>destroyAllWindows<span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <p>个人觉得已经写得挺清晰了，跑一遍程序看看：</p>
-<img src="/Lillia.github.io/2022/01/11/xing-ren-jian-ce-demo/image-20230112122148499.png" class="" title="image-20230112122148499">
+<img src="/Lillia.github.io/2022/01/11/xing-ren-jian-ce-demo/image-20230112122148499.png" class="">
 
 <p>我们会发现这个id:32的person一共上行撞线了两次，下行撞线了一次，显然这里有碰撞带比较靠近，碰撞点抖动导致的问题，但是也不应该出现两次上行的检测。</p>
 <p>我们重新看一下代码，判断上下行是通过蓝黄碰撞带实现的，进出的时候记录下他们碰撞带碰撞的先后顺序，先蓝后黄则下，先黄后蓝则上，如果视频里没有捣乱的人，那么每个人都只会碰撞到一次蓝带和一次黄带。</p>
@@ -960,30 +962,30 @@ outputs <span class="token operator">=</span> self<span class="token punctuation
     list_id_overlapping<span class="token punctuation">.</span>append<span class="token punctuation">(</span>track_id<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 
 <p>我们再跑一遍：</p>
-<img src="/Lillia.github.io/2022/01/11/xing-ren-jian-ce-demo/image-20230112133308420.png" class="" title="image-20230112133308420">
+<img src="/Lillia.github.io/2022/01/11/xing-ren-jian-ce-demo/image-20230112133308420.png" class="">
 
 <p>但是根据视频，44号应该是上行，我们在44号第一次被记录的时候设置一个breakpoint，把那帧图片用imwrite保存下来看看：</p>
-<img src="/Lillia.github.io/2022/01/11/xing-ren-jian-ce-demo/image-20230112134448214.png" class="" title="image-20230112134448214">
+<img src="/Lillia.github.io/2022/01/11/xing-ren-jian-ce-demo/image-20230112134448214.png" class="">
 
 <p>至少在我看来应该是碰到黄色才对，但是程序记录他碰到蓝色了…</p>
 <p>再看看碰撞点坐标：</p>
-<img src="/Lillia.github.io/2022/01/11/xing-ren-jian-ce-demo/image-20230112135329291.png" class="" title="image-20230112135329291">
+<img src="/Lillia.github.io/2022/01/11/xing-ren-jian-ce-demo/image-20230112135329291.png" class="">
 
 <p>是(58,228)，放去gimp查看像素：</p>
-<img src="/Lillia.github.io/2022/01/11/xing-ren-jian-ce-demo/image-20230112135711534.png" class="" title="image-20230112135711534">
+<img src="/Lillia.github.io/2022/01/11/xing-ren-jian-ce-demo/image-20230112135711534.png" class="">
 
 <p>圈住的点应该刚好就是(58,228)，也应该就是黄色碰撞带才对，看看附近的点值。</p>
-<img src="/Lillia.github.io/2022/01/11/xing-ren-jian-ce-demo/image-20230112142019419.png" class="" title="image-20230112142019419">
+<img src="/Lillia.github.io/2022/01/11/xing-ren-jian-ce-demo/image-20230112142019419.png" class="">
 
 <p>（0是幕布，1是蓝色碰撞带，2是黄色碰撞带）突然多了几行边界的1，可能是定义的时候出了问题，也可能是opencv转换的时候出了问题，先看看未转换前的色值：</p>
-<img src="/Lillia.github.io/2022/01/11/xing-ren-jian-ce-demo/image-20230112142521106.png" class="" title="image-20230112142521106">
+<img src="/Lillia.github.io/2022/01/11/xing-ren-jian-ce-demo/image-20230112142521106.png" class="">
 
 <p>确实是因为opencv的转换导致的，我推测这里应该是转换的时候把部分边界作了均值处理，我们把2改成3看看会不会有所变化.</p>
-<img src="/Lillia.github.io/2022/01/11/xing-ren-jian-ce-demo/image-20230112143232011.png" class="" title="image-20230112143232011">
+<img src="/Lillia.github.io/2022/01/11/xing-ren-jian-ce-demo/image-20230112143232011.png" class="">
 
 <p>这应该是作了些均值处理，我们把它取成10，估计均值处理就不会出现1了，代码已经讲得比较清楚了，这部分的修改就不重新放上去了。</p>
 <p>现在结果应该就对了：</p>
-<img src="/Lillia.github.io/2022/01/11/xing-ren-jian-ce-demo/image-20230112150209019.png" class="" title="image-20230112150209019">
+<img src="/Lillia.github.io/2022/01/11/xing-ren-jian-ce-demo/image-20230112150209019.png" class="">
 
 <p>yolo模型和deepsort算法分另外两篇发，项目工程架构到这里写完了。</p>
 
@@ -1404,7 +1406,7 @@ outputs <span class="token operator">=</span> self<span class="token punctuation
                 <a href="/Lillia.github.io/2022/02/11/51-dan-pian-ji-jian-pan/">
                     <div class="card-image">
                         
-                        <img src="/Lillia.github.io/source/images/Lillia.jpg" class="responsive-img" alt="51单片机键盘">
+                        <img src="/Lillia.github.io/source/images/Lillia.JPG" class="responsive-img" alt="51单片机键盘">
                         
                         <span class="card-title">51单片机键盘</span>
                     </div>
