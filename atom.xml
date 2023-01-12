@@ -6,7 +6,7 @@
   <link href="https://github.com/DidUSeeMyElk/Lillia.github.io/atom.xml" rel="self"/>
   
   <link href="https://github.com/DidUSeeMyElk/Lillia.github.io/"/>
-  <updated>2023-01-12T08:18:10.554Z</updated>
+  <updated>2023-01-12T08:28:30.108Z</updated>
   <id>https://github.com/DidUSeeMyElk/Lillia.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://github.com/DidUSeeMyElk/Lillia.github.io/2023/01/11/xing-ren-jian-ce-demo/"/>
     <id>https://github.com/DidUSeeMyElk/Lillia.github.io/2023/01/11/xing-ren-jian-ce-demo/</id>
     <published>2023-01-11T07:44:00.000Z</published>
-    <updated>2023-01-12T08:18:10.554Z</updated>
+    <updated>2023-01-12T08:28:30.108Z</updated>
     
     
       
@@ -39,6 +39,12 @@
     
     <category term="blog" scheme="https://github.com/DidUSeeMyElk/Lillia.github.io/tags/blog/"/>
     
+    <category term="DeepLearning" scheme="https://github.com/DidUSeeMyElk/Lillia.github.io/tags/DeepLearning/"/>
+    
+    <category term="YOLOv5" scheme="https://github.com/DidUSeeMyElk/Lillia.github.io/tags/YOLOv5/"/>
+    
+    <category term="DeepSORT" scheme="https://github.com/DidUSeeMyElk/Lillia.github.io/tags/DeepSORT/"/>
+    
   </entry>
   
   <entry>
@@ -46,7 +52,7 @@
     <link href="https://github.com/DidUSeeMyElk/Lillia.github.io/2022/02/11/51-dan-pian-ji-jian-pan/"/>
     <id>https://github.com/DidUSeeMyElk/Lillia.github.io/2022/02/11/51-dan-pian-ji-jian-pan/</id>
     <published>2022-02-11T07:44:00.000Z</published>
-    <updated>2023-01-12T08:11:14.578Z</updated>
+    <updated>2023-01-12T08:27:00.277Z</updated>
     
     
       
@@ -64,6 +70,10 @@
     
     
     <category term="blog" scheme="https://github.com/DidUSeeMyElk/Lillia.github.io/tags/blog/"/>
+    
+    <category term="单片机" scheme="https://github.com/DidUSeeMyElk/Lillia.github.io/tags/%E5%8D%95%E7%89%87%E6%9C%BA/"/>
+    
+    <category term="键盘" scheme="https://github.com/DidUSeeMyElk/Lillia.github.io/tags/%E9%94%AE%E7%9B%98/"/>
     
   </entry>
   
