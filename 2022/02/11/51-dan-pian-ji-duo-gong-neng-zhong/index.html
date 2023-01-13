@@ -5,7 +5,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="51单片机多功能钟, 莉莉娅！">
-    <meta name="description" content="">
+    <meta name="description" content="知乎链接51单片机多功能钟的功能实现记录（7） - 知乎 (zhihu.com)
+51单片机多功能钟的功能实现记录（6） - 知乎 (zhihu.com)
+51单片机多功能钟的功能实现记录（5） - 知乎 (zhihu.com)
+51单片机">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -404,7 +407,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    0
+                    1.5k
                 </div>
                 
 
@@ -424,7 +427,29 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                
+                <h2 id="知乎链接"><a href="#知乎链接" class="headerlink" title="知乎链接"></a>知乎链接</h2><p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/465914774">51单片机多功能钟的功能实现记录（7） - 知乎 (zhihu.com)</a></p>
+<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/353607938">51单片机多功能钟的功能实现记录（6） - 知乎 (zhihu.com)</a></p>
+<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/353582224">51单片机多功能钟的功能实现记录（5） - 知乎 (zhihu.com)</a></p>
+<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/350620136">51单片机多功能钟的功能实现记录（4） - 知乎 (zhihu.com)</a></p>
+<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/350355949">51单片机多功能钟的功能实现记录（3） - 知乎 (zhihu.com)</a></p>
+<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/350321130">51单片机多功能钟的功能实现记录（2） - 知乎 (zhihu.com)</a></p>
+<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/350251379">51单片机多功能钟的功能实现记录（1） - 知乎 (zhihu.com)</a></p>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><p>我并不想把所有知乎内容都搬过来个人博客，一个是因为内容过于分散，另一个是这个作品是最开始做的，知乎也是刚开始写的，很多东西今天看起来都有点过时了，而且作为一个记录，代码上的细节知乎上有就可以了，个人的博客里不一定还需要另一篇一模一样地文章，我还是希望从另一个角度写一下这个作品。</p>
+<p>这个作品是利用51单片机做一个多功能钟，首先它的是个钟，然后再有多功能。于是我们就先从钟这个角度入手，先实现钟的功能。</p>
+<p>那么开发板上是有ds1302模块的，他能实现一个时钟的计时，我们还需要想想看钟要用什么屏幕对吧。</p>
+<p>第一，数码管。用数码管的话你就要考虑我后续加功能的话，比如要显示温度湿度，怎么显示，这就很麻烦。</p>
+<p>第二，LCD。用LCD就有一定的自由度，但你也要考虑，是用8pin的数据脚，还是用i2c接口。</p>
+<p>当时我还是刚开始学，开发板时钟例程用LCD就是8pin数据脚不用i2c的，那自然我是在这个基础上做的，但是这个例程是不带时间调整的，所以还要加上按键的时间调整，如果可以的话还要加上蓝牙。</p>
+<p>一个钟你还得有闹钟功能吧，你还要说是多功能，那得是还多弄几个功能，比如什么计时器之类的。</p>
+<p>ok那要做的工作就出来了，分为三个部分：</p>
+<p>首先是按键的使用和功能的切换，也就是按键能够拿去调时间，也能够拿去切换不同的模式，把框架主体定下来，再把功能模块往里填，大概记录在了文章（1）。</p>
+<p>第二是功能主体的建设，包括调整时间怎么调整，怎么把调好的时间传入给ds1302，计时器怎么实现，闹钟怎么实现，也是篇幅最大的，文章（3）（4）（6）都是记录这部分的。</p>
+<p>第三部分是外设的实现，包括LCD的驱动，和DHT11温湿度传感器的时序与使用，记录在了文章（2）。</p>
+<p>剩下的就是程序的优化，因为一开始写的代码有点屎山，51的那点资源不够我折腾了，所以提前进行了重构，当然重构了也是依托答辩，文章（5）记录这部分。</p>
+<p>到这里，软件部分就完成了，剩下的就是硬件PCB和作品外壳的设计了，这部分记录在了文章（7）。</p>
+<p>这看起来到这里就完成了，但有一个问题是文章里没有怎么提及的，那就是硬件资源问题。在文章里的按键设计是把八个按键全部用上了，但这就有一个问题，我们知道按键的触发要么通过中断，要么通过循环等待响应。八个按键要中断触发就只能额外通过与门实现，在开发板上不好实现；如果是通过循环等待响应，那程序的大部分时间就都在等待按键，只能从中抽出点时间去完成温湿度，显示更新等功能，当你功能不多的时候还好，功能多起来了，时间就很长，又反过来导致大部分时间都在等待程序运行，没有检测按键，导致按键反馈不行。如果是今天再让我去做这个作品，我当然知道应该搭个实验板，接几个与门，用中断触发，但当时我是不会的，这毕竟是第一个开始做的作品，动手能力还是比较差。这个问题后来我也发现做硬件很多时候不能只盯着代码，也要注意硬件的支持。流程也不是非得先写代码，再根据代码画硬件PCB的，也是需要互相结合的。当然这些内容很多我都在做键盘的时候遇到了，那块键盘还是挺喜欢的，所以这些问题都积累了不少的经验，也算是些经历吧。</p>
+<p>还有就是电源管理了，必须得说这种自带电源的作品设计是需要一点经验的，因为后来疫情吧，很多时候都进不了实验室干活，在家很多东西都没办法完成，所以后来的两个作品都是不自带电源了，用的USB供电。多了个电池，不管是电路设计上，还是外壳设计都挺麻烦的。后来还有一次自带电源的作品是传感器实验那门课的期末作业，是直接买的带充放电稳压的电池了，自己不设计电源电路了，当然后来作业也交上去了，资料也基本删了，就没办法展示了。其实我还挺喜欢那个作业的，里面还有个PID的控速，就是汇报的时候没讲好，老师听不懂，没给太高的分，挺可惜的。</p>
+
                 
             </div>
             <hr/>
@@ -848,7 +873,7 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/Lillia.github.io/2021/05/07/51-dan-pian-ji-jian-pan/">
+                <a href="/Lillia.github.io/2021/05/09/51-dan-pian-ji-jian-pan/">
                     <div class="card-image">
                         
                         
@@ -865,7 +890,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-05-07
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-05-09
                             </span>
                         <span class="publish-author">
                             
@@ -1034,7 +1059,7 @@
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">8.5k</span>
+                        class="white-color">10k</span>
             
             
             
