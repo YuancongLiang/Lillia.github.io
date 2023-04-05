@@ -1,8 +1,8 @@
 // live2d_path 参数建议使用绝对路径
 //const live2d_path = "/live2d-widget/";
-const live2d_path = "https://github.com/YuancongLiang/Lillia.github.io/blob/main/live2d-widget/";
+//const live2d_path = "https://github.com/YuancongLiang/Lillia.github.io/blob/main/live2d-widget/";
 //const live2d_path = "https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget/";
-//const live2d_path = "https://diduseemyelk.github.io/hexo-source-repository/tree/main/themes/hexo-theme-matery/source/live2d-widget/";
+const live2d_path = "https://github.com/YuancongLiang/hexo-source-repository/blob/main/themes/hexo-theme-matery/source/live2d-widget/";
 
 // 封装异步加载资源的方法
 function loadExternalResource(url, type) {
