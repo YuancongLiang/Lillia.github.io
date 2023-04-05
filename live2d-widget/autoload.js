@@ -1,6 +1,6 @@
 // live2d_path 参数建议使用绝对路径
 //const live2d_path = "/live2d-widget/";
-const live2d_path = "https://github.com/YuancongLiang/Lillia.github.io/blob/main/live2d-widget/";
+const live2d_path = "https://yuancongliang.github.io/Lillia.github.io/live2d-widget/";
 //const live2d_path = "https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget/";
 //const live2d_path = "https://github.com/YuancongLiang/hexo-source-repository/blob/main/themes/hexo-theme-matery/source/live2d-widget/";
 
