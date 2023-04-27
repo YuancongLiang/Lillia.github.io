@@ -6,7 +6,7 @@
   <link href="https://yuancongliang.github.io/Lillia.github.io/atom.xml" rel="self"/>
   
   <link href="https://yuancongliang.github.io/Lillia.github.io/"/>
-  <updated>2023-04-25T03:37:27.600Z</updated>
+  <updated>2023-04-27T17:07:58.984Z</updated>
   <id>https://yuancongliang.github.io/Lillia.github.io/</id>
   
   <author>
@@ -17,11 +17,39 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>一道可以用群论的算法</title>
+    <link href="https://yuancongliang.github.io/Lillia.github.io/2023/04/17/yi-dao-ke-yi-yong-qun-lun-de-suan-fa/"/>
+    <id>https://yuancongliang.github.io/Lillia.github.io/2023/04/17/yi-dao-ke-yi-yong-qun-lun-de-suan-fa/</id>
+    <published>2023-04-17T06:03:00.000Z</published>
+    <updated>2023-04-27T17:07:58.984Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;一道leetcode上的题目：&lt;/p&gt;
+&lt;p&gt;给定一个整数数组 &lt;code&gt;nums&lt;/code&gt;，将数组中的元素向右轮转</summary>
+        
+      
+    
+    
+    
+    <category term="群论" scheme="https://yuancongliang.github.io/Lillia.github.io/categories/%E7%BE%A4%E8%AE%BA/"/>
+    
+    
+    <category term="群论" scheme="https://yuancongliang.github.io/Lillia.github.io/tags/%E7%BE%A4%E8%AE%BA/"/>
+    
+    <category term="算法" scheme="https://yuancongliang.github.io/Lillia.github.io/tags/%E7%AE%97%E6%B3%95/"/>
+    
+  </entry>
+  
+  <entry>
     <title>记录下tensorRT的部署</title>
     <link href="https://yuancongliang.github.io/Lillia.github.io/2023/02/18/ji-lu-xia-tensorrt-de-bu-shu/"/>
     <id>https://yuancongliang.github.io/Lillia.github.io/2023/02/18/ji-lu-xia-tensorrt-de-bu-shu/</id>
     <published>2023-02-18T13:40:00.000Z</published>
-    <updated>2023-04-25T03:37:27.600Z</updated>
+    <updated>2023-04-27T17:07:59.096Z</updated>
     
     
       
@@ -52,7 +80,7 @@
     <link href="https://yuancongliang.github.io/Lillia.github.io/2023/02/16/ji-yu-yolov5-de-you-xi-zi-miao-kuang-jia/"/>
     <id>https://yuancongliang.github.io/Lillia.github.io/2023/02/16/ji-yu-yolov5-de-you-xi-zi-miao-kuang-jia/</id>
     <published>2023-02-16T15:44:00.000Z</published>
-    <updated>2023-04-25T03:37:27.472Z</updated>
+    <updated>2023-04-27T17:07:58.984Z</updated>
     
     
       
@@ -83,7 +111,7 @@
     <link href="https://yuancongliang.github.io/Lillia.github.io/2023/01/17/mei-jie-jue-de-yi-ge-wen-ti/"/>
     <id>https://yuancongliang.github.io/Lillia.github.io/2023/01/17/mei-jie-jue-de-yi-ge-wen-ti/</id>
     <published>2023-01-17T12:28:00.000Z</published>
-    <updated>2023-04-25T03:37:27.576Z</updated>
+    <updated>2023-04-27T17:07:59.076Z</updated>
     
     
       
@@ -114,7 +142,7 @@
     <link href="https://yuancongliang.github.io/Lillia.github.io/2023/01/11/xing-ren-jian-ce-demo/"/>
     <id>https://yuancongliang.github.io/Lillia.github.io/2023/01/11/xing-ren-jian-ce-demo/</id>
     <published>2023-01-11T15:44:00.000Z</published>
-    <updated>2023-04-25T03:37:27.580Z</updated>
+    <updated>2023-04-27T17:07:59.076Z</updated>
     
     
       
@@ -145,7 +173,7 @@
     <link href="https://yuancongliang.github.io/Lillia.github.io/2022/02/11/51-dan-pian-ji-duo-gong-neng-zhong/"/>
     <id>https://yuancongliang.github.io/Lillia.github.io/2022/02/11/51-dan-pian-ji-duo-gong-neng-zhong/</id>
     <published>2022-02-11T11:02:00.000Z</published>
-    <updated>2023-04-25T03:37:27.404Z</updated>
+    <updated>2023-04-27T17:07:58.924Z</updated>
     
     
       
@@ -172,7 +200,7 @@
     <link href="https://yuancongliang.github.io/Lillia.github.io/2021/05/09/51-dan-pian-ji-jian-pan/"/>
     <id>https://yuancongliang.github.io/Lillia.github.io/2021/05/09/51-dan-pian-ji-jian-pan/</id>
     <published>2021-05-09T04:38:00.000Z</published>
-    <updated>2023-04-25T03:37:27.404Z</updated>
+    <updated>2023-04-27T17:07:58.924Z</updated>
     
     
       
