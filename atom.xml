@@ -6,7 +6,7 @@
   <link href="https://yuancongliang.github.io/Lillia.github.io/atom.xml" rel="self"/>
   
   <link href="https://yuancongliang.github.io/Lillia.github.io/"/>
-  <updated>2023-04-28T06:56:10.417Z</updated>
+  <updated>2023-07-26T02:11:45.002Z</updated>
   <id>https://yuancongliang.github.io/Lillia.github.io/</id>
   
   <author>
@@ -17,11 +17,66 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>CAM论文解读</title>
+    <link href="https://yuancongliang.github.io/Lillia.github.io/2023/07/19/2023-7-19-cam-lun-wen-jie-du/"/>
+    <id>https://yuancongliang.github.io/Lillia.github.io/2023/07/19/2023-7-19-cam-lun-wen-jie-du/</id>
+    <published>2023-07-19T06:00:00.000Z</published>
+    <updated>2023-07-26T02:11:45.002Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;论文链接&quot;&gt;&lt;a href=&quot;#论文链接&quot; class=&quot;headerlink&quot; title=&quot;论文链接&quot;&gt;&lt;/a&gt;论文链接&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://arxiv.org/pdf/1512.04150.pdf&quot;&gt;Learning Deep</summary>
+        
+      
+    
+    
+    
+    <category term="深度学习" scheme="https://yuancongliang.github.io/Lillia.github.io/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="读论文" scheme="https://yuancongliang.github.io/Lillia.github.io/tags/%E8%AF%BB%E8%AE%BA%E6%96%87/"/>
+    
+    <category term="深度学习" scheme="https://yuancongliang.github.io/Lillia.github.io/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>WSL安装</title>
+    <link href="https://yuancongliang.github.io/Lillia.github.io/2023/05/20/wsl-an-zhuang/"/>
+    <id>https://yuancongliang.github.io/Lillia.github.io/2023/05/20/wsl-an-zhuang/</id>
+    <published>2023-05-20T10:01:00.000Z</published>
+    <updated>2023-07-26T02:11:45.278Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;首先是上来先打开Linux子系统支持。&lt;/p&gt;
+&lt;img src=&quot;/Lillia.github.io/2023/05/20/wsl-an-zhuang/image-20230520205932720.png&quot; class=&quot;&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="备忘录" scheme="https://yuancongliang.github.io/Lillia.github.io/categories/%E5%A4%87%E5%BF%98%E5%BD%95/"/>
+    
+    
+    <category term="备忘录" scheme="https://yuancongliang.github.io/Lillia.github.io/tags/%E5%A4%87%E5%BF%98%E5%BD%95/"/>
+    
+    <category term="Linux" scheme="https://yuancongliang.github.io/Lillia.github.io/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
     <title>一道可以用群论的算法</title>
     <link href="https://yuancongliang.github.io/Lillia.github.io/2023/04/17/yi-dao-ke-yi-yong-qun-lun-de-suan-fa/"/>
     <id>https://yuancongliang.github.io/Lillia.github.io/2023/04/17/yi-dao-ke-yi-yong-qun-lun-de-suan-fa/</id>
     <published>2023-04-17T06:03:00.000Z</published>
-    <updated>2023-04-28T06:56:10.417Z</updated>
+    <updated>2023-07-26T02:11:45.278Z</updated>
     
     
       
@@ -49,7 +104,7 @@
     <link href="https://yuancongliang.github.io/Lillia.github.io/2023/02/18/ji-lu-xia-tensorrt-de-bu-shu/"/>
     <id>https://yuancongliang.github.io/Lillia.github.io/2023/02/18/ji-lu-xia-tensorrt-de-bu-shu/</id>
     <published>2023-02-18T13:40:00.000Z</published>
-    <updated>2023-04-28T06:56:10.533Z</updated>
+    <updated>2023-07-26T02:11:45.430Z</updated>
     
     
       
@@ -67,9 +122,9 @@
     <category term="深度学习" scheme="https://yuancongliang.github.io/Lillia.github.io/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
     
     
-    <category term="blog" scheme="https://yuancongliang.github.io/Lillia.github.io/tags/blog/"/>
-    
     <category term="深度学习" scheme="https://yuancongliang.github.io/Lillia.github.io/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="blog" scheme="https://yuancongliang.github.io/Lillia.github.io/tags/blog/"/>
     
     <category term="TensorRT" scheme="https://yuancongliang.github.io/Lillia.github.io/tags/TensorRT/"/>
     
@@ -80,7 +135,7 @@
     <link href="https://yuancongliang.github.io/Lillia.github.io/2023/02/16/ji-yu-yolov5-de-you-xi-zi-miao-kuang-jia/"/>
     <id>https://yuancongliang.github.io/Lillia.github.io/2023/02/16/ji-yu-yolov5-de-you-xi-zi-miao-kuang-jia/</id>
     <published>2023-02-16T15:44:00.000Z</published>
-    <updated>2023-04-28T06:56:10.421Z</updated>
+    <updated>2023-07-26T02:11:45.282Z</updated>
     
     
       
@@ -98,9 +153,9 @@
     <category term="深度学习" scheme="https://yuancongliang.github.io/Lillia.github.io/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
     
     
-    <category term="blog" scheme="https://yuancongliang.github.io/Lillia.github.io/tags/blog/"/>
-    
     <category term="深度学习" scheme="https://yuancongliang.github.io/Lillia.github.io/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="blog" scheme="https://yuancongliang.github.io/Lillia.github.io/tags/blog/"/>
     
     <category term="YOLOv5" scheme="https://yuancongliang.github.io/Lillia.github.io/tags/YOLOv5/"/>
     
@@ -111,7 +166,7 @@
     <link href="https://yuancongliang.github.io/Lillia.github.io/2023/01/17/mei-jie-jue-de-yi-ge-wen-ti/"/>
     <id>https://yuancongliang.github.io/Lillia.github.io/2023/01/17/mei-jie-jue-de-yi-ge-wen-ti/</id>
     <published>2023-01-17T12:28:00.000Z</published>
-    <updated>2023-04-28T06:56:10.509Z</updated>
+    <updated>2023-07-26T02:11:45.406Z</updated>
     
     
       
@@ -129,9 +184,9 @@
     <category term="备忘录" scheme="https://yuancongliang.github.io/Lillia.github.io/categories/%E5%A4%87%E5%BF%98%E5%BD%95/"/>
     
     
-    <category term="blog" scheme="https://yuancongliang.github.io/Lillia.github.io/tags/blog/"/>
-    
     <category term="深度学习" scheme="https://yuancongliang.github.io/Lillia.github.io/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="blog" scheme="https://yuancongliang.github.io/Lillia.github.io/tags/blog/"/>
     
     <category term="YoloV8" scheme="https://yuancongliang.github.io/Lillia.github.io/tags/YoloV8/"/>
     
@@ -142,7 +197,7 @@
     <link href="https://yuancongliang.github.io/Lillia.github.io/2023/01/11/xing-ren-jian-ce-demo/"/>
     <id>https://yuancongliang.github.io/Lillia.github.io/2023/01/11/xing-ren-jian-ce-demo/</id>
     <published>2023-01-11T15:44:00.000Z</published>
-    <updated>2023-04-28T06:56:10.513Z</updated>
+    <updated>2023-07-26T02:11:45.406Z</updated>
     
     
       
@@ -158,9 +213,9 @@
     <category term="深度学习" scheme="https://yuancongliang.github.io/Lillia.github.io/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
     
     
-    <category term="blog" scheme="https://yuancongliang.github.io/Lillia.github.io/tags/blog/"/>
-    
     <category term="深度学习" scheme="https://yuancongliang.github.io/Lillia.github.io/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="blog" scheme="https://yuancongliang.github.io/Lillia.github.io/tags/blog/"/>
     
     <category term="YOLOv5" scheme="https://yuancongliang.github.io/Lillia.github.io/tags/YOLOv5/"/>
     
@@ -173,7 +228,7 @@
     <link href="https://yuancongliang.github.io/Lillia.github.io/2022/02/11/51-dan-pian-ji-duo-gong-neng-zhong/"/>
     <id>https://yuancongliang.github.io/Lillia.github.io/2022/02/11/51-dan-pian-ji-duo-gong-neng-zhong/</id>
     <published>2022-02-11T11:02:00.000Z</published>
-    <updated>2023-04-28T06:56:10.357Z</updated>
+    <updated>2023-07-26T02:11:45.206Z</updated>
     
     
       
@@ -200,7 +255,7 @@
     <link href="https://yuancongliang.github.io/Lillia.github.io/2021/05/09/51-dan-pian-ji-jian-pan/"/>
     <id>https://yuancongliang.github.io/Lillia.github.io/2021/05/09/51-dan-pian-ji-jian-pan/</id>
     <published>2021-05-09T04:38:00.000Z</published>
-    <updated>2023-04-28T06:56:10.357Z</updated>
+    <updated>2023-07-26T02:11:45.206Z</updated>
     
     
       
