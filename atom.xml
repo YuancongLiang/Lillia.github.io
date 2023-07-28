@@ -6,7 +6,7 @@
   <link href="https://yuancongliang.github.io/Lillia.github.io/atom.xml" rel="self"/>
   
   <link href="https://yuancongliang.github.io/Lillia.github.io/"/>
-  <updated>2023-07-26T02:20:34.376Z</updated>
+  <updated>2023-07-28T03:48:46.583Z</updated>
   <id>https://yuancongliang.github.io/Lillia.github.io/</id>
   
   <author>
@@ -17,11 +17,32 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Any Deep ReLU Network is Shallow论文笔记</title>
+    <link href="https://yuancongliang.github.io/Lillia.github.io/2023/07/26/2023-7-26-any-deep-relu-network-is-shallow-lun-wen-bi-ji/"/>
+    <id>https://yuancongliang.github.io/Lillia.github.io/2023/07/26/2023-7-26-any-deep-relu-network-is-shallow-lun-wen-bi-ji/</id>
+    <published>2023-07-26T05:00:00.000Z</published>
+    <updated>2023-07-28T03:48:46.583Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;论文链接&quot;&gt;&lt;a href=&quot;#论文链接&quot; class=&quot;headerlink&quot; title=&quot;论文链接&quot;&gt;&lt;/a&gt;论文链接&lt;/h2&gt;&lt;p&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>CAM论文解读</title>
     <link href="https://yuancongliang.github.io/Lillia.github.io/2023/07/19/2023-7-19-cam-lun-wen-jie-du/"/>
     <id>https://yuancongliang.github.io/Lillia.github.io/2023/07/19/2023-7-19-cam-lun-wen-jie-du/</id>
     <published>2023-07-19T06:00:00.000Z</published>
-    <updated>2023-07-26T02:20:34.376Z</updated>
+    <updated>2023-07-28T03:48:46.427Z</updated>
     
     
       
@@ -48,7 +69,7 @@
     <link href="https://yuancongliang.github.io/Lillia.github.io/2023/05/20/wsl-an-zhuang/"/>
     <id>https://yuancongliang.github.io/Lillia.github.io/2023/05/20/wsl-an-zhuang/</id>
     <published>2023-05-20T10:01:00.000Z</published>
-    <updated>2023-07-26T02:20:34.620Z</updated>
+    <updated>2023-07-28T03:48:46.639Z</updated>
     
     
       
@@ -76,7 +97,7 @@
     <link href="https://yuancongliang.github.io/Lillia.github.io/2023/04/17/yi-dao-ke-yi-yong-qun-lun-de-suan-fa/"/>
     <id>https://yuancongliang.github.io/Lillia.github.io/2023/04/17/yi-dao-ke-yi-yong-qun-lun-de-suan-fa/</id>
     <published>2023-04-17T06:03:00.000Z</published>
-    <updated>2023-07-26T02:20:34.624Z</updated>
+    <updated>2023-07-28T03:48:46.639Z</updated>
     
     
       
@@ -104,7 +125,7 @@
     <link href="https://yuancongliang.github.io/Lillia.github.io/2023/02/18/ji-lu-xia-tensorrt-de-bu-shu/"/>
     <id>https://yuancongliang.github.io/Lillia.github.io/2023/02/18/ji-lu-xia-tensorrt-de-bu-shu/</id>
     <published>2023-02-18T13:40:00.000Z</published>
-    <updated>2023-07-26T02:20:34.736Z</updated>
+    <updated>2023-07-28T03:48:46.751Z</updated>
     
     
       
@@ -135,7 +156,7 @@
     <link href="https://yuancongliang.github.io/Lillia.github.io/2023/02/16/ji-yu-yolov5-de-you-xi-zi-miao-kuang-jia/"/>
     <id>https://yuancongliang.github.io/Lillia.github.io/2023/02/16/ji-yu-yolov5-de-you-xi-zi-miao-kuang-jia/</id>
     <published>2023-02-16T15:44:00.000Z</published>
-    <updated>2023-07-26T02:20:34.624Z</updated>
+    <updated>2023-07-28T03:48:46.643Z</updated>
     
     
       
@@ -166,7 +187,7 @@
     <link href="https://yuancongliang.github.io/Lillia.github.io/2023/01/17/mei-jie-jue-de-yi-ge-wen-ti/"/>
     <id>https://yuancongliang.github.io/Lillia.github.io/2023/01/17/mei-jie-jue-de-yi-ge-wen-ti/</id>
     <published>2023-01-17T12:28:00.000Z</published>
-    <updated>2023-07-26T02:20:34.716Z</updated>
+    <updated>2023-07-28T03:48:46.731Z</updated>
     
     
       
@@ -197,7 +218,7 @@
     <link href="https://yuancongliang.github.io/Lillia.github.io/2023/01/11/xing-ren-jian-ce-demo/"/>
     <id>https://yuancongliang.github.io/Lillia.github.io/2023/01/11/xing-ren-jian-ce-demo/</id>
     <published>2023-01-11T15:44:00.000Z</published>
-    <updated>2023-07-26T02:20:34.716Z</updated>
+    <updated>2023-07-28T03:48:46.731Z</updated>
     
     
       
@@ -228,7 +249,7 @@
     <link href="https://yuancongliang.github.io/Lillia.github.io/2022/02/11/51-dan-pian-ji-duo-gong-neng-zhong/"/>
     <id>https://yuancongliang.github.io/Lillia.github.io/2022/02/11/51-dan-pian-ji-duo-gong-neng-zhong/</id>
     <published>2022-02-11T11:02:00.000Z</published>
-    <updated>2023-07-26T02:20:34.560Z</updated>
+    <updated>2023-07-28T03:48:46.583Z</updated>
     
     
       
@@ -255,7 +276,7 @@
     <link href="https://yuancongliang.github.io/Lillia.github.io/2021/05/09/51-dan-pian-ji-jian-pan/"/>
     <id>https://yuancongliang.github.io/Lillia.github.io/2021/05/09/51-dan-pian-ji-jian-pan/</id>
     <published>2021-05-09T04:38:00.000Z</published>
-    <updated>2023-07-26T02:20:34.560Z</updated>
+    <updated>2023-07-28T03:48:46.583Z</updated>
     
     
       
