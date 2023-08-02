@@ -106,27 +106,27 @@ P(x)=
   \end{matrix}
   \right])</script><p>最终结果是</p><script type="math/tex;mode=display">ReLU(-h_{1,1}x_1 - h_{1,2}x_2 - ... - h_{1,n}x_n + c_1)+\\
 ReLU(-h_{2,1}x_1 - h_{2,2}x_2 - ... - h_{2,n}x_n + c_2)+\\
-ReLU(-h_{5,1}x_1 - h_{5,2}x_2 - ... - h_{5,n}x_n + c_5)\\</script><p>假如我们的<script type="math/tex">x</script>恰好处在第<script type="math/tex">j</script>个分区，我们会发现，<script type="math/tex">R\cdot ReLU(\Psi(x))</script>的第<script type="math/tex">j</script>行恰好就是<script type="math/tex">0</script>。由于我们的<script type="math/tex">P_1,...,P_k</script>是声明所有分区的最小半空间集合，所以不可能出现同时有两行出现<script type="math/tex">0</script>，否则就意味着我们的<script type="math/tex">x</script>它同时处于两个不同的分区，又或者说，处在两个分区的交集上，这样它的半空间集合就不可能是最小的。（我们完全可以将交集部分单独划分成一个新的分区）。</p><h3 id="第三个构造"><a href="#第三个构造" class="headerlink" title="第三个构造"></a>第三个构造</h3><p>我们在这一步会引入一个拓展实数<script type="math/tex">\infin</script>，在数学上这样的拓展实数系代数性质很差，因为两个无穷大相除是没有结果的。但是我们在这里并不关心这件事，我们只引入两个基本的运算即可：</p><script type="math/tex;mode=display">0 \cdot \infin = 0\\
-a \cdot \infin = \infin,for \; a\in R</script><p>幸运的是在Python中包含这样的一个常量，用<script type="math/tex">inf</script>表示。</p><p>我们引入一个函数矩阵<script type="math/tex">\Lambda(x)=\alpha^T x+\beta</script>，不妨假定它一共有<script type="math/tex">p</script>行。它的第<script type="math/tex">j</script>行表示第<script type="math/tex">j</script>个分区的对应的线性函数。则有：</p><script type="math/tex;mode=display">\Lambda(x) - \infin \cdot ReLU(R\cdot ReLU(\Psi(x))) =
+ReLU(-h_{5,1}x_1 - h_{5,2}x_2 - ... - h_{5,n}x_n + c_5)\\</script><p>假如我们的<script type="math/tex">x</script>恰好处在第<script type="math/tex">j</script>个分区，我们会发现，<script type="math/tex">R\cdot ReLU(\Psi(x))</script>的第<script type="math/tex">j</script>行恰好就是<script type="math/tex">0</script>。由于我们的<script type="math/tex">P_1,...,P_k</script>是声明所有分区的最小半空间集合，所以不可能出现同时有两行出现<script type="math/tex">0</script>，否则就意味着我们的<script type="math/tex">x</script>它同时处于两个不同的分区，又或者说，处在两个分区的交集上，这样它的半空间集合就不可能是最小的。（我们完全可以将交集部分单独划分成一个新的分区）。</p><h3 id="第三个构造"><a href="#第三个构造" class="headerlink" title="第三个构造"></a>第三个构造</h3><p>我们在这一步会引入一个拓展实数<script type="math/tex">\infin</script>，在数学上这样的拓展实数系代数性质很差，因为两个无穷大相除是没有结果的。但是我们在这里并不关心这件事，我们只引入两个基本的运算即可：</p><script type="math/tex;mode=display">0 \cdot \infty = 0\\
+a \cdot \infty = \infty,for \; a\in R</script><p>幸运的是在Python中包含这样的一个常量，用<script type="math/tex">inf</script>表示。</p><p>我们引入一个函数矩阵<script type="math/tex">\Lambda(x)=\alpha^T x+\beta</script>，不妨假定它一共有<script type="math/tex">p</script>行。它的第<script type="math/tex">j</script>行表示第<script type="math/tex">j</script>个分区的对应的线性函数。则有：</p><script type="math/tex;mode=display">\Lambda(x) - \infty \cdot ReLU(R\cdot ReLU(\Psi(x))) =
 \left[
  \begin{matrix}
-   -\infin\\
+   -\infty\\
    ...\\
-   -\infin\\
+   -\infty\\
    \Lambda(x)_j\\
-   -\infin\\
+   -\infty\\
    ...\\
-   -\infin
+   -\infty
   \end{matrix}
-  \right]</script><p>根据我们上面提到的运算，只有第<script type="math/tex">j</script>行才不为<script type="math/tex">-\infin</script>，而是对应的<script type="math/tex">\Lambda(x)_j</script>。</p><p>此时只需要经过一次<script type="math/tex">ReLU</script>即可将<script type="math/tex">-\infin</script>全部消除。</p><p>但实际上我们并不知道<script type="math/tex">\Lambda(x)_j</script>是否大于0。如果它小于0，那么经过<script type="math/tex">ReLU</script>以后也变成0了。因此我们构造的是：</p><script type="math/tex;mode=display">ReLU(\left[
+  \right]</script><p>根据我们上面提到的运算，只有第<script type="math/tex">j</script>行才不为<script type="math/tex">-\infty</script>，而是对应的<script type="math/tex">\Lambda(x)_j</script>。</p><p>此时只需要经过一次<script type="math/tex">ReLU</script>即可将<script type="math/tex">-\infty</script>全部消除。</p><p>但实际上我们并不知道<script type="math/tex">\Lambda(x)_j</script>是否大于0。如果它小于0，那么经过<script type="math/tex">ReLU</script>以后也变成0了。因此我们构造的是：</p><script type="math/tex;mode=display">ReLU(\left[
  \begin{matrix}
-\Lambda(x) - \infin \cdot ReLU(R\cdot ReLU(\Psi(x)))\\
--\Lambda(x) - \infin \cdot ReLU(R\cdot ReLU(\Psi(x)))
+\Lambda(x) - \infty \cdot ReLU(R\cdot ReLU(\Psi(x)))\\
+-\Lambda(x) - \infty \cdot ReLU(R\cdot ReLU(\Psi(x)))
  \end{matrix}
   \right])</script><p>这是一个<script type="math/tex">2p</script>行的向量，其中，要么是第<script type="math/tex">j</script>行为<script type="math/tex">0</script>，要么是第<script type="math/tex">p+j</script>行为<script type="math/tex">0</script>，已经无所谓了，我们只需要构造一个行向量<script type="math/tex">W</script>，<script type="math/tex">1</script>到<script type="math/tex">p</script>列为<script type="math/tex">1</script>，<script type="math/tex">p</script>到<script type="math/tex">2p</script>列为<script type="math/tex">-1</script>，则有：</p><script type="math/tex;mode=display">W \cdot ReLU(\left[
  \begin{matrix}
-\Lambda(x) - \infin \cdot ReLU(R\cdot ReLU(\Psi(x)))\\
--\Lambda(x) - \infin \cdot ReLU(R\cdot ReLU(\Psi(x)))
+\Lambda(x) - \infty \cdot ReLU(R\cdot ReLU(\Psi(x)))\\
+-\Lambda(x) - \infty \cdot ReLU(R\cdot ReLU(\Psi(x)))
  \end{matrix}
   \right])=\Lambda(x)</script><p>到这一步，我们就已经构造出来我们希望的东西了，只要我们找到<script type="math/tex">H,c,\alpha,\beta</script>，那么我们就可以利用刚才的构造，找到一个与原网络完全等价的一个浅层网络了。</p><p>（在论文里，作者对于第三个构造有一些数学上的考虑，但是这是比较trivial的）</p></div><hr><div class="reprint" id="reprint-statement"><div class="reprint__author"><span class="reprint-meta" style="font-weight:700"><i class="fas fa-user">文章作者:</i></span> <span class="reprint-info"><a href="/Lillia.github.io/about" rel="external nofollow noreferrer">lyc</a></span></div><div class="reprint__type"><span class="reprint-meta" style="font-weight:700"><i class="fas fa-link">文章链接:</i></span> <span class="reprint-info"><a href="https://yuancongliang.github.io/Lillia.github.io/Lillia.github.io/2023/07/26/2023-7-26-any-deep-relu-network-is-shallow-lun-wen-bi-ji/">https://yuancongliang.github.io/Lillia.github.io/Lillia.github.io/2023/07/26/2023-7-26-any-deep-relu-network-is-shallow-lun-wen-bi-ji/</a></span></div><div class="reprint__notice"><span class="reprint-meta" style="font-weight:700"><i class="fas fa-copyright">版权声明:</i></span> <span class="reprint-info">本博客所有文章除特別声明外，均采用 <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a> 许可协议。转载请注明来源 <a href="/Lillia.github.io/about" target="_blank">lyc</a> !</span></div></div><script async defer>document.addEventListener("copy", function (e) {
         let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
